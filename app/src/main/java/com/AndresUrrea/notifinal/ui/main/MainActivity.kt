@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         mainBinding.CalcularButton.setOnClickListener {
             if (!(mainBinding.TextInputLaboratorio.text
+
                     .isNullOrEmpty()||mainBinding.TextInputLaboratorio.text.toString() == ".") && !(mainBinding.TextInputPrimer.text
                     .isNullOrEmpty()||mainBinding.TextInputPrimer.text.toString() == ".") && !(mainBinding.TextInputSegundo.text
                     .isNullOrEmpty()||mainBinding.TextInputSegundo.text.toString() == ".") && !(mainBinding.TextInputFinal.text
