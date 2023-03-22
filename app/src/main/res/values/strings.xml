@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Notifinal</string>
+    <string name="laboratorio">Nota Laboratorio</string>
+    <string name="primer_avance">Nota del primer avance</string>
+    <string name="segundo_avance">Nota segundo avance</string>
+    <string name="proyecto_final">Nota proyecto final</string>
+    <string name="Calcular">CALCULAR</string>
+    <string name="help25por">25%</string>
+    <string name="sietepor">7%</string>
+    <string name="ochopor">8%</string>
+    <string name="labpor">60%</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

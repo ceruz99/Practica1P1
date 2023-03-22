@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text_input_final"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Laboratorio_textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:helperText="@string/labpor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Text_Input_Laboratorio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/laboratorio"
+            android:inputType="number|numberDecimal"
+            android:textColor="@color/teal_200" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Primer_textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:helperText="@string/sietepor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Laboratorio_textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Text_Input_Primer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/primer_avance"
+            android:inputType="number|numberDecimal"
+            android:textColor="@color/teal_200" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Segundo_textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:helperText="@string/ochopor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Primer_textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Text_Input_Segundo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/segundo_avance"
+            android:inputType="number|numberDecimal"
+            android:textColor="@color/teal_200" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Final_TestInpuLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:helperText="@string/help25por"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Segundo_textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Text_Input_Final"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/proyecto_final"
+            android:inputType="number|numberDecimal"
+            android:textColor="@color/teal_200"
+            android:textColorHighlight="@color/teal_200" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/Calcular_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Final_TestInpuLayout" />
+
+    <TextView
+        android:id="@+id/text_Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="RESULTADO"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calcular_button" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="center"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        android:contentDescription="@null"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
